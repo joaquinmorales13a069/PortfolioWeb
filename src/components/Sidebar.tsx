@@ -49,7 +49,7 @@ const Sidebar: React.FC<SidebarProps> = ({
                                 onClick={() => onSectionChange(item.id)}
                                 className={`w-full flex items-center space-x-4 p-4 rounded-lg transition-all duration-300 group ${
                                     isActive
-                                        ? "bg-yellow-500 text-white shadow-md transform scale-150"
+                                        ? "bg-yellow-500 text-white shadow-md transform scale-115"
                                         : "text-gray-600 hover:bg-gray-100 hover:text-gray-800"
                                 }`}
                             >

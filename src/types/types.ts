@@ -10,7 +10,7 @@ export interface Profile {
 }
 // Working experience interfance
 export interface Experience {
-    id: string;
+    id: number;
     company: string;
     position: string;
     duration: string;
@@ -19,7 +19,7 @@ export interface Experience {
 }
 // Education interface
 export interface Education {
-    id: string;
+    id: number;
     institution: string;
     degree: string;
     duration: string;
@@ -29,12 +29,13 @@ export interface Education {
 export interface Skills {
     name: string;
     level: number; // Goes from 1 to 5
-    category: 'frotend' | 'backend' | 'database' | 'tools' | 'other'
+    category: 'frontend' | 'backend' | 'database' | 'tools' | 'other'
 }
 // Resume interface
 export interface Resume {
     experience: Experience[];
     education: Education[];
+    skills: Skills[]
 }
 // Projects interface
 export interface Project {

@@ -3,6 +3,7 @@ import type { MenuItem } from "../types/types";
 import Profile from "../pages/Profile";
 import Sidebar from "./Sidebar";
 import MobileMenu from "./MobileMenu";
+import Resume from "../pages/Resume";
 
 const Layout: React.FC = () => {
     const [activeSection, setActiveSection] = useState<MenuItem>("profile");
@@ -11,6 +12,12 @@ const Layout: React.FC = () => {
         switch (activeSection) {
             case "profile":
                 return <Profile />;
+            case "resume":
+                return <Resume />
+            case "folio":
+                break;
+            case "contact":
+                break;
             default:
                 return <Profile />;
         }
