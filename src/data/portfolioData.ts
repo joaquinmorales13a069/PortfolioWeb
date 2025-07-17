@@ -84,3 +84,31 @@ export const resumeData: Resume = {
     { name: "Figma", level: 2, category: "other" }
   ]
 }
+
+export const contactData: Contact = {
+    email: "personal@joaquinmorales.dev",
+    phone: "+61 421944166",
+    location: "Sydney, Australia",
+    social: [
+        {
+            name: "LinkedIn",
+            url: "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+            icon: "linkedin"
+        },
+        {
+            name: "GitHub",
+            url: "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+            icon: "github"
+        },
+        {
+            name: "Twitter",
+            url: "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+            icon: "twitter"
+        },
+        {
+            name: "Email",
+            url: "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+            icon: "instagram"
+        }
+    ]
+}
