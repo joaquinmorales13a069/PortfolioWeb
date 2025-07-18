@@ -51,7 +51,7 @@ export const resumeData: Resume = {
         {
             id: 1,
             institution: "Torrens University",
-            degree: "M.S. of Software Engineering (Cloud Computing Adv)",
+            degree: "M.S. of Software Engineering (Cloud Computing Adv.)",
             duration: "Sep 2023 - Present",
             description: "The Master of Software Engineering (Cloud Computing Advanced) is a 2 year specialized graduate program that combines advanced software engineering principles with comprehensive cloud computing technologies, covering distributed systems, containerization, microservices architecture, and cloud-native development practices."
 
@@ -92,23 +92,23 @@ export const contactData: Contact = {
     social: [
         {
             name: "LinkedIn",
-            url: "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-            icon: "linkedin"
+            url: "https://www.linkedin.com/in/joaquin-morales-803068177/",
+            icon: "FaLinkedin"
         },
         {
             name: "GitHub",
-            url: "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-            icon: "github"
+            url: "https://github.com/joaquinmorales13a069",
+            icon: "FaGithub"
         },
         {
             name: "Twitter",
-            url: "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-            icon: "twitter"
+            url: "https://x.com/C13Jmorales",
+            icon: "FaTwitter"
         },
         {
             name: "Email",
-            url: "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-            icon: "instagram"
+            url: "mailto:personal@joaquinmorales.dev",
+            icon: "FaEnvelope"
         }
     ]
 }
