@@ -8,9 +8,15 @@ import {
     FaTwitter,
     FaPaperPlane,
 } from "react-icons/fa";
+import emailjs from "@emailjs/browser";
 import { contactData } from "../data/portfolioData";
 
 const Contact: React.FC = () => {
+    // Load .env variables
+    const serviceId: string = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+    const templateId: string = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+    const publicKey: string = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+
     const [formData, setFormData] = useState({
         name: "",
         email: "",
@@ -41,15 +47,25 @@ const Contact: React.FC = () => {
     };
 
     // Process form submission
-    const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
-        console.log(formData);
-        setFormData({
-            name: "",
-            email: "",
-            subject: "",
-            message: "",
-        });
+
+        try {
+            await emailjs.sendForm(serviceId, templateId, e.currentTarget, {
+                publicKey: publicKey,
+            });
+            console.log("Email sent successfully");
+            alert("Email sent successfully");
+            setFormData({
+                name: "",
+                email: "",
+                subject: "",
+                message: "",
+            });
+        } catch (error) {
+            console.error("Error sending email:", error);
+            alert("Failed to send message. Please try again later.");
+        }
     };
 
     return (
