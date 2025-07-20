@@ -112,3 +112,25 @@ export const contactData: Contact = {
         }
     ]
 }
+
+export const projectData: Project[] = [
+    {
+        id: 1,
+        title: "Smart Grocery List",
+        description: "A web application that allows users to create and manage grocery lists. Users can add, edit, and delete items, as well as create tailored meal plans based on pantry items on each list.",
+        image: "",
+        technologies: ["React", "Express", "Node.js", "MongoDB", "AWS", "Docker", "openProject"],
+        liveUrl: "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+        githubUrl: "https://github.com/joaquinmorales13a069/SmartGroceryListApp"
+
+    },
+    {
+        id: 2,
+        title: "Expense Tracker",
+        description: "A web application that allows users to track their expenses. Users can add, edit, and delete expenses.",
+        image: "",
+        technologies: ["React", "Express", "Node.js", "MongoDB", "AWS", "Docker"],
+        liveUrl: "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+        githubUrl: "https://github.com/joaquinmorales13a069/expense_tracker"
+    }
+]
