@@ -6,6 +6,7 @@ import {
     FaDownload,
 } from "react-icons/fa";
 import { profileData } from "../data/portfolioData";
+import profilePhoto from "../assets/images/DSCF1615.jpeg";
 
 const Profile: React.FC = () => {
     return (
@@ -31,17 +32,12 @@ const Profile: React.FC = () => {
                         {/* Profile Image */}
                         <div className="bg-white rounded-lg p-8 shadow-lg animate-slide-up">
                             <div className="w-full max-w-sm mx-auto">
-                                <div className="aspect-[4/5] bg-gradient-to-br from-gray-200 to-gray-300 rounded-lg border-4 border-white shadow-lg overflow-hidden flex items-center justify-center">
-                                    <div className="text-center">
-                                        <div className="w-24 h-24 bg-yellow-500 rounded-full mx-auto mb-4 flex items-center justify-center">
-                                            <span className="text-3xl font-bold text-white">
-                                                JD
-                                            </span>
-                                        </div>
-                                        <p className="text-gray-600 text-sm">
-                                            Profile Image
-                                        </p>
-                                    </div>
+                                <div className="aspect-[4/5] bg-gradient-to-br from-gray-200 to-gray-300 rounded-lg border-4 border-white shadow-lg overflow-hidden">
+                                    <img
+                                        src={profilePhoto}
+                                        alt="profile picture"
+                                        className="w-full h-full object-cover"
+                                    />
                                 </div>
                             </div>
                         </div>
@@ -104,9 +100,9 @@ const Profile: React.FC = () => {
                                     over 1 years of experience in building
                                     modern web applications. My journey in
                                     technology started with a curiosity about
-                                    how things work, and it has
-                                    evolved into a career of creating elegant
-                                    solutions to complex problems.
+                                    how things work, and it has evolved into a
+                                    career of creating elegant solutions to
+                                    complex problems.
                                 </p>
                                 <p>
                                     I specialize in React, Node.js, and cloud

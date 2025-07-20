@@ -4,6 +4,7 @@ import Profile from "../pages/Profile";
 import Sidebar from "./Sidebar";
 import MobileMenu from "./MobileMenu";
 import Resume from "../pages/Resume";
+import Contact from "../pages/Contact";
 
 const Layout: React.FC = () => {
     const [activeSection, setActiveSection] = useState<MenuItem>("profile");
@@ -17,7 +18,7 @@ const Layout: React.FC = () => {
             case "folio":
                 break;
             case "contact":
-                break;
+                return <Contact />
             default:
                 return <Profile />;
         }

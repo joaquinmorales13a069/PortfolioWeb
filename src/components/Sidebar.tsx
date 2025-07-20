@@ -2,6 +2,7 @@ import React from "react";
 import { FaUser, FaFileAlt, FaFolder, FaEnvelope } from "react-icons/fa";
 import { profileData } from "../data/portfolioData";
 import type { MenuItem } from "../types/types";
+import sideMenuPhoto from '../assets/images/1749561599765.jpeg'
 
 interface SidebarProps {
     activeSection: MenuItem;
@@ -26,7 +27,7 @@ const Sidebar: React.FC<SidebarProps> = ({
                 <div className="mb-12 text-center">
                     <div className="w-32 h-40 mx-auto mb-6 border-4 border-white shadow-lg overflow-hidden rounded-lg">
                         <div className="w-full h-full bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center">
-                            <FaUser className="text-4xl text-gray-500" />
+                        <img src={sideMenuPhoto} alt="Profile" className="w-full h-full object-cover" />
                         </div>
                     </div>
                     <h1 className="text-2xl font-bold text-gray-800 mb-2">

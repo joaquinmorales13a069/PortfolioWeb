@@ -39,7 +39,7 @@ export interface Resume {
 }
 // Projects interface
 export interface Project {
-    id: string;
+    id: number;
     title: string;
     description: string;
     image: string;
