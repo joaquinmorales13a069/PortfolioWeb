@@ -120,7 +120,7 @@ export const projectData: Project[] = [
         description: "A web application that allows users to create and manage grocery lists. Users can add, edit, and delete items, as well as create tailored meal plans based on pantry items on each list.",
         image: "",
         technologies: ["React", "Express", "Node.js", "MongoDB", "AWS", "Docker", "openProject"],
-        liveUrl: "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+        liveUrl: "https://www.google.com/",
         githubUrl: "https://github.com/joaquinmorales13a069/SmartGroceryListApp"
 
     },
@@ -130,7 +130,7 @@ export const projectData: Project[] = [
         description: "A web application that allows users to track their expenses. Users can add, edit, and delete expenses.",
         image: "",
         technologies: ["React", "Express", "Node.js", "MongoDB", "AWS", "Docker"],
-        liveUrl: "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+        liveUrl: "https://www.google.com/",
         githubUrl: "https://github.com/joaquinmorales13a069/expense_tracker"
     }
 ]
