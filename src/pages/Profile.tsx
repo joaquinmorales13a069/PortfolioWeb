@@ -7,6 +7,7 @@ import {
 } from "react-icons/fa";
 import { profileData } from "../data/portfolioData";
 import profilePhoto from "../assets/images/DSCF1615.jpeg";
+import cv from "../assets/Joaquin_cv.pdf"
 
 const Profile: React.FC = () => {
     return (
@@ -117,10 +118,12 @@ const Profile: React.FC = () => {
 
                         {/* Download CV Button */}
                         <div className="animate-slide-up-delay-4">
-                            <button className="w-full bg-white text-yellow-600 border-2 border-white hover:bg-yellow-600 hover:text-white font-semibold py-4 px-6 rounded-lg transition-all duration-300 flex items-center justify-center space-x-3 shadow-lg">
-                                <FaDownload className="text-xl" />
-                                <span>Download CV</span>
-                            </button>
+                            <a href={cv} download target="_blank" className="decoration-none">
+                                <button className="w-full bg-white text-yellow-600 border-2 border-white hover:bg-yellow-600 hover:text-white font-semibold py-4 px-6 rounded-lg transition-all duration-300 flex items-center justify-center space-x-3 shadow-lg">
+                                    <FaDownload className="text-xl" />
+                                    <span>Download CV</span>
+                                </button>
+                            </a>
                         </div>
                     </div>
                 </div>

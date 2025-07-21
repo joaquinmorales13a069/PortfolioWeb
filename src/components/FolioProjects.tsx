@@ -1,4 +1,4 @@
-import React from "react";
+
 import { FaCode, FaEye, FaGithub } from "react-icons/fa";
 
 type Props = {
