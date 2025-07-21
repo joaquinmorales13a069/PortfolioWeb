@@ -13,14 +13,22 @@ const Folio = () => {
         "other",
     ];
 
+    const technologyCategories: { [key: string]: string[] } = {
+        frontend: ["React", "TypeScript", "JavaScript", "HTML", "CSS", "Vue", "Angular"],
+        backend: ["Node.js", "Express", "Python", "Java", "C#", "PHP"],
+        database: ["MongoDB", "PostgreSQL", "MySQL", "Redis"],
+        tools: ["AWS", "Docker", "Git", "Jenkins"],
+        other: ["Figma", "openProject", "Trello"]
+    };
+
     const filteredProjects =
-        selectedCategory === "all"
-            ? projectData
-            : projectData.filter((project) =>
-                  project.technologies.some((tech) =>
-                      tech.toLowerCase().includes(selectedCategory)
-                  )
-              );
+    selectedCategory === "all"
+        ? projectData
+        : projectData.filter((project) =>
+              project.technologies.some((tech) =>
+                  technologyCategories[selectedCategory]?.includes(tech)
+              )
+          );
 
     return (
         <div className="min-h-screen bg-gradient-to-br from-yellow-400 to-yellow-600 p-8">
