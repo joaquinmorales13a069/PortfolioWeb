@@ -5,7 +5,7 @@ import Sidebar from "./Sidebar";
 import MobileMenu from "./MobileMenu";
 import Resume from "../pages/Resume";
 import Contact from "../pages/Contact";
-import Folio from "./Folio";
+import Folio from "../pages/Folio";
 
 const Layout: React.FC = () => {
     const [activeSection, setActiveSection] = useState<MenuItem>("profile");

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { projectData, contactData } from "../data/portfolioData";
-import FolioProjects from "./FolioProjects";
+import FolioProjects from "../components/FolioProjects";
 
 const Folio = () => {
     const [selectedCategory, setSelectedCategory] = useState<string>("all");
